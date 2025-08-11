@@ -1,0 +1,29 @@
+[
+  {
+    "TaskTypes": "no1",
+    "ExpectedDistribution": 0.7,
+    "BinsAvailable": 2703.75,
+    "AvgTaskPerGroup": 2,
+    "TaskGroups": 1351.875,
+    "FrequencyDistribution": 0.5,
+    "MaxTaskGroup": 2027.8125
+  },
+  {
+    "TaskTypes": "no2",
+    "ExpectedDistribution": 0.1,
+    "BinsAvailable": 386.25,
+    "AvgTaskPerGroup": 4,
+    "TaskGroups": 96.5625,
+    "FrequencyDistribution": 0.5,
+    "MaxTaskGroup": 144.84375
+  },
+  {
+    "TaskTypes": "no3",
+    "ExpectedDistribution": 0.2,
+    "BinsAvailable": 772.5,
+    "AvgTaskPerGroup": 20,
+    "TaskGroups": 38.625,
+    "FrequencyDistribution": 0.5,
+    "MaxTaskGroup": 57.9375
+  }
+]

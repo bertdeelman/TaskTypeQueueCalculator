@@ -1,0 +1,166 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #B9132F; /* Main color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content Layout */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Row Layout */
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Containers */
+#form-container, #task-type-container, #documentation-container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Configuration */
+#form-container {
+    flex: 0 1 350px; /* Fixed width on large screens */
+}
+
+#form-container h2 {
+    color: #34495E; /* Accent color */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    flex: 1;
+}
+
+input {
+    flex: 1.5;
+    max-width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #34495E; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+}
+
+button:hover {
+    background: #2C3E50; /* Slightly darker accent color */
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: #1A252E; /* Even darker accent color */
+    transform: translateY(0);
+}
+
+/* Task Types Distribution */
+#task-type-container {
+    flex: 1 1 600px; /* Expands to fill remaining space */
+    min-width: 350px;
+    text-align: center;
+}
+
+#taskTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#taskTable th {
+    background-color: #34495E; /* Accent color */
+    color: white;
+    padding: 10px;
+}
+
+#taskTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Documentation */
+#documentation-container {
+    flex: 1 1 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #B9132F; /* Main color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack containers vertically on small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    #form-container, #task-type-container, #documentation-container {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: none;
+    }
+}
